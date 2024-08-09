@@ -1,0 +1,794 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.buy-quick {
+    left: 0;
+    z-index: 100;
+    top: 0;
+    font-size: 20px;
+    position: sticky;
+    color: white;
+}
+
+.buy-quick1 {
+    position: relative;
+}
+
+.buy {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    background-color: deeppink;
+    gap: 5px;
+    font-size: 13px;
+    padding: 5px 40px 5px 10px;
+    text-transform: uppercase;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+}
+
+.quick {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    margin-top: 50px;
+    background-color: #18252c;
+    gap: 5px;
+    font-size: 13px;
+    padding: 5px 20px 5px 10px;
+    text-transform: uppercase;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+}
+
+.buy span,
+.quick span {
+    display: none;
+}
+
+.buy:hover span {
+    display: block;
+}
+
+.quick:hover span {
+    display: block;
+}
+
+.buy:hover,
+.quick:hover {
+    display: flex;
+    align-items: center;
+
+}
+.herosection{
+    background-image: url(../img/jpg/about.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+.herosection::before {
+    content: '';
+    height: 400px;
+    width: 100%;
+    background-color: rgba(31, 39, 50, 0.55);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    z-index: 1;
+}
+.hero-about{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    z-index: 5;
+}
+.navbar {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: absolute !important;
+    z-index: 4;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.475);
+    padding: 0px 50px !important;
+    top: 0;
+}
+
+.btn-primary {
+    display: none !important;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.nav1 {
+    color: deeppink;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 40px 0px !important;
+}
+
+.nav,
+.page,
+.service {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 40px 0px !important;
+}
+
+.quote {
+    background-color: deeppink;
+    padding: 5px 20px;
+}
+.page a{
+    color: black;
+    text-decoration: none;
+}
+.page:hover{
+    color: deeppink;
+}
+
+.service:hover {
+    color: deeppink;
+}
+
+.page-hover {
+    display: none;
+}
+.page-hover a{
+    color: black;
+    text-decoration: none;
+}
+.page:hover .page-hover {
+    position: absolute;
+    top: 80px;
+    background-color: white;
+    z-index: 3;
+    display: block;
+    left: 35%;
+    color: black;
+    padding: 20px 60px 20px 40px;
+    line-height: 40px;
+}
+
+.service:hover .page-hover {
+    position: absolute;
+    top: 80px;
+    background-color: white;
+    z-index: 3;
+    display: block;
+    left: 40%;
+    color: black;
+    padding: 20px 60px 20px 40px;
+    line-height: 40px;
+}
+
+.about-page li {}
+
+.about-page:hover {
+    color: deeppink;
+}
+/* main */
+.main{
+    display: flex;
+    height: 100%;
+    padding: 70px 100px !important;
+    gap: 50px;
+    margin: 100px 0;
+    background-color: #f6f6f6;
+}
+.Write{
+    width: 60%;
+}
+.Write h1{
+    font-weight: 700;
+}
+.row{
+    padding: 40px 0;
+    line-height: 40px;
+}
+input:focus-visible {
+    outline-offset: 0px;
+    border: none !important;
+}
+:focus-visible {
+    outline: none !important;
+}
+.form-label{
+    font-size: 17px !important;
+}
+.form-control{
+    padding: 10px 10px !important;
+}
+.submit{
+    background-color: deeppink; 
+    color: white;
+    border: none;
+    width: 50%;
+
+}
+/* contact-details */
+.contact-details{
+    background-color: #18252c;
+    width: 40%;
+    padding: 30px 50px;
+}
+.what {
+    padding: 50px 0px;
+    text-align: left;
+}
+
+.what h5 {
+    color: deeppink;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    background-color: rgb(145, 143, 143);
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.cri {
+    height: 8px;
+    width: 8px;
+    background-color: deeppink;
+    border-radius: 50%;
+    animation: cri 3s ease-in infinite alternate-reverse;
+    position: relative;
+}
+
+@keyframes cri {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100px;
+    }
+}
+
+.what h1 {
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+}
+
+/* email */
+.email{
+    display: flex;
+    border-bottom: 1px solid white;
+    gap: 40px;
+    margin: 20px 0;
+}
+.email:hover .email-icon{
+    transform: rotateY(180deg);
+    background: #ff497c;
+}
+.email-icon{
+    background-color: gray;
+    padding: 10px 15px;
+    transition: 0.5s;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email i{
+    font-size: 20px;
+    color: white;
+}
+.email-detail{
+    color: white;
+}
+.email-detail h5{
+    font-size: 18px;
+}
+.email-detail p{
+    color: gray;
+    font-size: 15px;
+}
+.media1{
+    border-radius: 50%;
+}
+.map iframe{
+    width: 100%;
+}
+
+
+
+/* footer start */
+footer {
+    background-color: #18252c;
+    padding: 20px 0;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    gap: 200px;
+    border-bottom: 1px solid gainsboro;
+    text-align: left;
+
+}
+
+/* log */
+.log {
+    width: 33.33%;
+}
+
+.log p {
+    font-size: 20px;
+    margin: 30px 0 0 0;
+    color: gainsboro;
+    text-align: left;
+}
+
+.media {
+    /* display: flex; */
+    gap: 20px;
+}
+
+.media1 {
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    height: 41px;
+    line-height: 41px;
+    width: 41px;
+    margin: 30px 10px 0 0;
+}
+
+.media1:hover {
+    background-color: deeppink;
+}
+
+/* sub */
+.sub {
+    width: 33.33%;
+}
+
+.sub p {
+    color: gainsboro;
+    margin: 30px 0 30px 0;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.sub button {
+    background-color: #18252c;
+    color: gainsboro;
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid deeppink;
+    border-radius: 10px;
+}
+
+/* contact */
+.contact {
+    width: 33.33%;
+}
+.ph {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.div-icon i {
+    color: deeppink;
+    font-size: 30px;
+}
+
+footer p {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+footer span {
+    color: deeppink;
+}
+
+/* footer close */
+
+
+
+
+/* media */
+@media only screen and (min-width: 320px) and (max-width: 567px) {
+
+    .menu,
+    .quote,
+    .year1,
+    .processimg,
+    .buy-quick{
+        display: none;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .navbar {
+        padding: 10px 20px !important;
+        justify-content: space-between !important;
+        gap: 20px;
+    }
+
+    .box2 {
+        width: 20%;
+        display: none;
+    }
+
+    .log1 {
+        width: 30%;
+    }
+
+    .log1 h2 {
+        font-size: small;
+    }
+
+    .btn-primary {
+        display: block !important;
+        background-color: deeppink !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 10px 15px !important;
+    }
+
+    .offcanvas.offcanvas-end {
+        top: 66px !important;
+    }
+
+    .home1,
+    .pages1,
+    .services1,
+    .projects1,
+    .blog1,
+    .contact1 {
+        border-bottom: 1px solid gainsboro;
+        padding: 10px 0;
+    }
+
+    .nav1,
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gainsboro;
+        padding: 10px 0;
+    }
+
+    .offcanvas.offcanvas-end {
+        height: 400px;
+    }
+
+    .what {
+        padding: 50px 20px;
+    }
+
+    .web {
+        flex-wrap: wrap;
+    }
+
+    .webdesign,
+    .webdevelop,
+    .webapp {
+        width: 100%;
+    }
+
+    .hover-web p {
+        bottom: 45px;
+        animation-name: web;
+    }
+
+    @keyframes web {
+        0% {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        100% {
+            bottom: 50px;
+            opacity: 1;
+        }
+
+    }
+
+    @keyframes web1 {
+        0% {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        100% {
+            bottom: 15px;
+            opacity: 1;
+        }
+
+    }
+
+    .hover-web h6 {
+        bottom: 15px;
+        font-size: 14px;
+        animation-name: web1;
+    }
+
+    .con {
+        padding: 30px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .ceo {
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .info-img,
+    .info-content,
+    .ceo-img {
+        width: 100%;
+    }
+
+    .section3 h5 {
+        padding-top: 100px;
+    }
+
+    .section3 h1 {
+        font-size: 24px;
+        padding: 0 20px;
+    }
+
+    .year {
+        margin-top: 188px;
+    }
+
+    .section3 {
+        background-position: right;
+        margin-bottom: 230px;
+    }
+
+    .section3con {
+        flex-wrap: wrap;
+        padding: 0 0 !important;
+    }
+
+    .process-img1,
+    .process,
+    .process-img {
+        margin-left: 0;
+        padding: 0 0;
+    }
+
+    .acord,
+    .accord {
+        width: 100%;
+        padding: 20px 20px;
+        height: 100%;
+    }
+
+    .info-content,
+    .ceo-content1 {
+        width: 100%;
+    }
+
+    .ceo-content1 li {
+        width: 100%;
+    }
+
+    .section5content,
+    .blog,
+    .footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .log,
+    .sub,
+    .contact {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .ph {
+        font-size: medium;
+    }
+
+}
+
+
+/* media */
+@media only screen and (min-width: 320px) and (max-width: 990px) {
+
+    .menu,
+    .quote,
+    .year1,
+    .processimg,
+    .buy-quick {
+        display: none;
+    }
+    .herosection{
+        height: 300px;
+    }
+    .herosection::before{
+        height: 300px;
+    }
+    .card {
+        width: 100% !important;
+    }
+
+    .navbar {
+        padding: 10px 20px !important;
+        justify-content: space-between !important;
+        gap: 20px;
+    }
+    .info-img2,.blub{
+        display: none;
+    }
+    .info-img1 img{
+        height: 100%;
+        margin: 0 10px;
+    }
+
+    .box2 {
+        width: 20%;
+        display: none;
+    }
+
+    .log1 {
+        width: 30%;
+    }
+
+    .log1 h2 {
+        font-size: small;
+    }
+    .btn-primary {
+        display: block !important;
+        background-color: deeppink !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 10px 15px !important;
+    }
+    .offcanvas.offcanvas-end {
+        width: 100% !important;
+        top: 0 !important;
+        height: 100% !important;
+    }
+
+    /* toggle */
+    #toggle-hover {
+        display: none;
+        position: relative;
+        top: 0;
+    }
+
+    .toggle-hover a {
+        color: #1f2732;
+        text-decoration: none;
+    }
+/* toggle1 */
+#toggle-hover1 {
+    display: none;
+    position: relative;
+    top: 0;
+}
+
+.toggle-hover1 a {
+    color: #1f2732;
+    text-decoration: none;
+}
+    .about-page {
+        border-bottom: 1px solid #e6e6e6;
+        padding: 30px 0px 30px 20px;
+        width: 100%;
+        color: #1f2732;
+    }
+    .nav1{
+        text-decoration: none !important;
+    }
+    .nav{
+        text-decoration: none !important;
+        color: black;
+    }
+.nav:hover{
+    color: deeppink;
+}
+    .home1,
+    .pages1,
+    .services1,
+    .projects1,
+    .blog1,
+    .contact1 {
+        border-bottom: 1px solid gainsboro;
+        padding: 10px 0;
+    }
+
+    .nav1,
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gainsboro;
+        padding: 10px 0;
+    }
+
+    .main{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 70px 20px !important;
+        margin: 50px 0;
+    }
+    .Write,.contact-details{
+        width: 100%;
+    }
+    /* footer */
+    .footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .log,
+    .sub,
+    .contact {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .ph {
+        font-size: medium;
+    }
+
+}
+@media only screen and (min-width: 991px) and (max-width: 1226px) {
+   
+    .footer {
+        gap: 100px;
+    }
+    .main{
+        gap: 20px;
+        padding: 0 44px !important;
+    }
+    .img1 img{
+        width: 50%;
+    }
+    .box2{
+        display: none;
+    }
+
+}

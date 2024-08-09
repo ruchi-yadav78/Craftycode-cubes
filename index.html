@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link -->
+  <link rel="stylesheet" href="assest/css/home.css">
+  <!-- swiper link css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>CraftyCode</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- js -->
+
+
+</head>
+
+<body>
+  <!-- buy theme & quick questions -->
+
+  <div class="buy-quick">
+    <div class="buy-quick1">
+      <div class="buy"><i class="fa-solid fa-cart-plus"></i>
+        <span>buy wp theme</span>
+      </div>
+      <div class="quick"><i class="fa-regular fa-envelope"></i>
+        <span>quick questions?</span>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navbar">
+    <div class="log1">
+      <h1><span style="color: deeppink; font-weight: 700; font-family: cursive;">C</span><span style="font-size: 20px; color: white; text-decoration: overline; font-weight: 800; font-family: revert;">rafty</span><span style="color: white; font-family: cursive; font-weight: 800; font-size: 20px;">code</span></h1>
+    </div>
+    <div class="menu">
+      <div class="nav1">Home</div>
+      <div class="page">Pages<i class="fa-solid fa-angle-down"></i>
+        <ul class="page-hover">
+          <a href="about.html">
+            <li class="about-page">About Us</li>
+          </a>
+          
+          <a href="faq.html">
+            <li class="about-page">FAQ</li>
+          </a>
+        </ul>
+      </div>
+      <div class="service">Services<i class="fa-solid fa-angle-down"></i>
+        <ul class="page-hover">
+          <a href="webdesign.html">
+            <li class="about-page">Web designing</li>
+          </a>
+          <a href="webdesign.html">
+            <li class="about-page">Web Development</li>
+          </a>
+          <a href="webdesign.html">
+            <li class="about-page">Web Application</li>
+          </a>
+        </ul>
+      </div>
+      <a href="project.html" style="color: white; text-decoration: none;">
+        <div class="nav">Projects</div>
+      </a>
+      <a href="blog.html" style="color: white; text-decoration: none;">
+        <div class="nav">Blog</div>
+      </a>
+      <a href="contact.html" style="color: white; text-decoration: none;">
+        <div class="nav">Contact</div>
+      </a>
+    </div>
+
+    <div class="box2">
+      <input type="search" placeholder="Search" class="search" class="fa-solid fa-magnifying-glass"></input>
+      <div class="quote">Free Quote</div>
+    </div>
+    <!-- toggle -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h1><span style="color: deeppink; font-weight: 700; font-family: cursive;">C</span><span style="font-size: 20px; color: black; text-decoration: overline; font-weight: 800; font-family: revert;">rafty</span><span style="color: deeppink; font-family: cursive; font-weight: 800;">code</span></h1>
+        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <a class="nav1">Home</a>
+        <div class="nav" onclick="toggle()">Pages<i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="toggle-hover" id="toggle-hover">
+          <a href="about.html">
+            <div class="about-page">About Us</div>
+          </a>
+          
+          <a href="faq.html">
+            <div class="about-page">FAQ</div>
+          </a>
+        </div>
+        <div class="nav" onclick="toggle1()">Services<i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="page-hover" id="toggle-hover1">
+          <a href="webdesign.html">
+            <div class="about-page">Web designing</div>
+          </a>
+          <a href="webdesign.html">
+            <div class="about-page">Web Development</div>
+          </a>
+          <a href="webdesign.html">
+            <div class="about-page">Web Application</div>
+          </a>
+        </div>
+        <a href="project.html" class="nav">Projects</a>
+        <a href="blog.html" class="nav">Blog</a>
+        <a href="contact.html" class="nav">Contact</a>
+      </div>
+    </div>
+    <!-- toggle close -->
+  </div>
+
+  <!-- carousel -->
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 2"><img src="assest="/img/png/01.png" alt=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assest/img/png/slide1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h6>STRATEGIC . INNOVATE . EXCELLENCE</h6>
+          <h1>CREATIVE <br />DESIGN</h1>
+          <button>GET STARTED</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assest/img/png/slide3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h6>STRATEGIC . INNOVATE . EXCELLENCE</h6>
+          <h1>EMPOWER <br />ELEVATE</h1>
+          <button>GET STARTED</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assest/img/png/slide2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h6>STRATEGIC . INNOVATE . EXCELLENCE</h6>
+          <h1>CREATIVE <br />THINKER</h1>
+          <button>GET STARTED</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section1 -->
+  <div class="what">
+    <h5>WHAT WE DO</h5>
+    <div class="line">
+      <div class="cri"></div>
+    </div>
+    <h1>Services That Help You Grow.</h1>
+    <div class="web">
+      <!-- webdesign -->
+      <div class="webdesign">
+        <div class="iconweb"><img src="assest/img/png/web1.png"></div>
+        <h2>Web </br>Designing</h2>
+        <!-- hoverweb -->
+        <div class="hover-web">
+          <p>We offers plan and assemble managing for you from startups to the last creation or closing creation.</p>
+          <h6>Read More</h6>
+        </div>
+        <!-- hoverweb -->
+
+      </div>
+      <!-- webdevelop -->
+      <div class="webdevelop">
+        <div class="iconweb"><img src="assest/img/png/web2.png"></div>
+        <h2>Web </br>Development</h2>
+
+        <div class="hover-web">
+          <p>We offers plan and assemble managing for you from startups to the last creation or closing creation.</p>
+          <h6>Read More</h6>
+        </div>
+      </div>
+      <div class="webapp">
+        <div class="iconweb"><img src="assest/img/png/web3.png"></div>
+        <h2>Web </br>Application</h2>
+        <div class="hover-web">
+          <p>We offers plan and assemble managing for you from startups to the last creation or closing creation.</p>
+          <h6>Read More</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- swection2 -->
+  <div class="container section2">
+
+    <div class="con">
+      <div class="info-img">
+        <div class="info-img1" id="info-img1"><img src="assest/img/jpg/img1.jpeg" alt=""></div>
+        <div class="year">
+          <div style="font-size: 70px; font-weight: 700;">18</div>
+          <h3>Years of </br>Experience</h3>
+        </div>
+        <div class="info-img2" id="info-img2"><img src="assest/img/jpg/img2.webp" alt=""></div>
+      </div>
+      <div class="info-content">
+        <h5>WHAT WE DO</h5>
+        <div class="line1">
+          <div class="cri1"></div>
+        </div>
+        <h1>We offer the best design and development services!</h1>
+        <p>Our objective is to offer a high-quality service and a dependable source of income to our investors while
+          simultaneously minimizing any potential risks and automating and simplifying the relationships.</p>
+        <div class="ceo">
+          <div class="ceo-img">
+            <img src="assest/img/jpg/ceo.jpg" alt="" class="ceoimg"
+              style="border-radius: 50%; position: relative; left: -30px; top: 30px;">
+            <img src="assest/img/jpg/signature-2.png" alt="" style="    left: -10px; position: relative; top: 20px;">
+            <h5>Mita Walker</h5>
+            <p>CEO, Flyweb</p>
+          </div>
+          <div class="ceo-content" id="ceo-content">
+            <li><i class="fa-solid fa-check"></i> Provide Web Design & Development</li>
+            <li><i class="fa-solid fa-check"></i> We Provide Logo Design & Copywriting</li>
+            <li><i class="fa-solid fa-check"></i> Best Website Support & Consultations</li>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- section3 -->
+  <div class="section3">
+    <h5>WHAT WE DO</h5>
+    <div class="line">
+      <div class="cri"></div>
+    </div>
+    <h1>Web solutions allows your business to </br>increase productivity</h1>
+    <div class="container section3con">
+      <div class="acord">
+        <div class="accordion accord" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                1. Whay we are best company?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                We are committed to providing our customers with exceptional service while offering our employees the
+                best training. There are many variations of passages of lorem ipsum is simply free text.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2. How the template process works?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                We are committed to providing our customers with exceptional service while offering our employees the
+                best training. There are many variations of passages of lorem ipsum is simply free text.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                3. What should be listed on a business card?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                We are committed to providing our customers with exceptional service while offering our employees the
+                best training. There are many variations of passages of lorem ipsum is simply free text.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contentimg"><img src="assest/img/jpg/extra-sec-img.jpg" alt=""></div>
+    </div>
+  </div>
+  </div>
+  <!-- section7 -->
+  <div class="section7">
+    <div class="scrolingcontinue">
+      <div class="elementor-column">
+        <h1>Web Development -</h1>
+        <h1>Mobile Application -</h1>
+        <h1>Product Design -</h1>
+        <h1>Design & Branding -</h1>
+        <h1>Web Application -</h1>
+      </div>
+    </div>
+  </div>
+  <!-- section4 -->
+  <div class="container section2">
+
+    <div class="con">
+      <div class="info-img">
+        <div class="info-img3" id="info-img3"><img src="assest/img/jpg/pexels-photo-3184431.webp" alt=""></div>
+        <div class="year1">
+          <p>We’re delivering the best customer experience!</p>
+        </div>
+        <div class="info-img4" id="info-img4"><img src="assest/img/jpg/pexels-photo-3205403.webp" alt=""></div>
+      </div>
+      <div class="info-content">
+        <h5>ABOUT US</h5>
+        <div class="line1">
+          <div class="cri1"></div>
+        </div>
+        <h1>We are award winning web development agency.</h1>
+        <div class="ceo-content1" id="ceo-content1">
+          <li><i class="fa-solid fa-check"></i> Remarkable to receive such a personalized touch.</li>
+          <li><i class="fa-solid fa-check"></i> Duis aute irure dolor in reprehenderit in voluptate.</li>
+          <li><i class="fa-solid fa-check"></i> I did not escape without a fight. Velit esse cillum dolore.</li>
+        </div>
+        <div class="ceo">
+          <div class="ceo1" id="ceo1">
+            <img src="assest/img/jpg/avatar-01.jpg" alt="">
+            <img src="assest/img/jpg/avatar-02.jpg" alt="">
+            <img src="assest/img/jpg/avatar-03.jpg" alt="">
+          </div>
+          <div class="ceo-content2" id="ceo-content2">
+            <h4>Over 48,500 people work for us in more than 75 countries.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section5 -->
+  <div class="section5">
+    <div class="container section5con">
+      <h5>WHAT WE DO</h5>
+      <div class="line">
+        <div class="cri"></div>
+      </div>
+      <h1>Our Working Process</h1>
+      <div class="processimg"><img src="assest/img/png/process-line.png" alt=""></div>
+      <!-- section5content -->
+      <div class="section5content" id="section5content">
+        <div class="process">
+          <div class="process-img">
+            <img src="assest/img/jpg/process-01.jpg" alt="">
+            <h4>01</h4>
+          </div>
+          <div class="process-con">
+            <h5>Design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="process">
+          <div class="process-img1">
+            <img src="assest/img/jpg/process-02.jpg" alt="">
+            <h4>02</h4>
+          </div>
+          <div class="process-con">
+            <h5>Design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="process">
+          <div class="process-img">
+            <img src="assest/img/jpg/process-03.jpg" alt="">
+            <h4>03</h4>
+          </div>
+          <div class="process-con">
+            <h5>Design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section8 -->
+  <div class="what section8">
+    <h5>OUR BLOG</h5>
+    <div class="line">
+      <div class="cri"></div>
+    </div>
+    <h1>Our Recent News</h1>
+    <!-- blog -->
+    <div class="blog" id="blog">
+      <div class="card" style="width: 25rem;">
+        <button class="solution">Solutions</button>
+        <img class="card-img-top" src="assest/img/jpg/blog1.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">September 14, 2023</h5>
+          <h2 class="card-text">The Reasons Why We Love Web Design Agency</h2>
+        </div>
+        <div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+      <div class="card" style="width: 25rem;">
+        <button class="solution">Marketing</button>
+        <img class="card-img-top" src="assest/img/jpg/blog2.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">September 14, 2023</h5>
+          <h2 class="card-text">How To Own Web Design Agency For Free</h2>
+        </div>
+        <div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+      <div class="card" style="width: 25rem;">
+        <button class="solution">Development</button>
+        <img class="card-img-top" src="assest/img/jpg/blog3.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">September 14, 2023</h5>
+          <h2 class="card-text">Five Latest Developments In Web Agency</h2>
+        </div>
+        <div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+
+    <div class="container footer">
+      <div class="log">
+        <h1>CraftyCode</h1>
+        <p>We have been most trusted web design agency since 25+ years.</p>
+        <div class="media">
+          <div class="media1"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="media1"><i class="fa-brands fa-twitter"></i></div>
+          <div class="media1"><i class="fa-brands fa-youtube"></i></div>
+          <div class="media1"><i class="fa-brands fa-linkedin-in"></i></div>
+        </div>
+      </div>
+      <div class="sub">
+        <h1>Newsletter</h1>
+        <p>Subscribe to our newsletter to receive updates on the latest news!</p>
+        <button>Subscribe with us <i class="fa-brands fa-telegram"></i></button>
+      </div>
+      <div class="contact">
+        <h1>Contacts</h1>
+        <div class="ph">
+          <div class="div-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="content">
+            <h4>Contact Us</h4>
+            <p>(+44) 123-456-789</p>
+          </div>
+        </div>
+        <div class="ph">
+          <div class="div-icon"><i class="fa-regular fa-envelope"></i></div>
+          <div class="content">
+            <h4>Mail Us</h4>
+            <p>craftycode@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>© 2024 All rights reserved by <span> Website Layout</span></p>
+
+
+  </footer>
+  <!-- aos animation -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assest/js/home1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link -->
+  <link rel="stylesheet" href="assest/css/webdesign.css">
+  <!-- swiper link css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- js -->
+
+
+</head>
+
+<body>
+  <!-- buy theme & quick questions -->
+
+  <div class="buy-quick">
+    <div class="buy-quick1">
+      <div class="buy"><i class="fa-solid fa-cart-plus"></i>
+        <span>buy wp theme</span>
+      </div>
+      <div class="quick"><i class="fa-regular fa-envelope"></i>
+        <span>quick questions?</span>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="herosection">
+    <div class="navbar">
+      <div class="log1">
+        <h1><span style="color: deeppink; font-weight: 700; font-family: cursive;">C</span><span style="font-size: 20px; color: white; text-decoration: overline; font-weight: 800; font-family: revert;">rafty</span><span style="color: white; font-family: cursive; font-weight: 800; font-size: 20px;">code</span></h1>
+
+      </div>
+      <!-- menu -->
+      <div class="menu">
+        <a href="index.html" style="text-decoration: none;">
+          <div class="nav1">Home</div>
+        </a>
+        <div class="page">Pages<i class="fa-solid fa-angle-down"></i>
+          <ul class="page-hover">
+            <a href="about.html">
+              <li class="about-page">About Us</li>
+            </a>
+            <a href="faq.html">
+              <li class="about-page">FAQ</li>
+            </a>
+          </ul>
+        </div>
+        <div class="service">Services<i class="fa-solid fa-angle-down"></i>
+          <ul class="page-hover">
+            <a href="webdesign.html"><li class="about-page">Web designing</li></a>
+            <a href="webdesign.html"><li class="about-page">Web Development</li></a>
+            <a href="webdesign.html"><li class="about-page">Web Application</li></a>
+          </ul>
+        </div>
+        <a href="project.html" style="color: white; text-decoration: none;">
+          <div class="nav">Projects</div>
+        </a>
+        <a href="blog.html" style="color: white; text-decoration: none;">
+          <div class="nav">Blog</div>
+        </a>
+        <a href="contact.html" style="color: white; text-decoration: none;">
+          <div class="nav">Contact</div>
+        </a>
+      </div>
+      <!-- box2 -->
+      <div class="box2">
+        <input type="search" placeholder="Search" class="search" class="fa-solid fa-magnifying-glass"></input>
+        <div class="quote">Free Quote</div>
+      </div>
+      <!-- toggle -->
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h1><span style="color: deeppink; font-weight: 700; font-family: cursive;">C</span><span style="font-size: 20px; color: black; text-decoration: overline; font-weight: 800; font-family: revert;">rafty</span><span style="color: deeppink; font-family: cursive; font-weight: 800;">code</span></h1>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <a class="nav1">Home</a>
+            <div class="nav" onclick="toggle()">Pages<i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="toggle-hover" id="toggle-hover">
+              <a href="about.html">
+                <div class="about-page">About Us</div>
+              </a>
+              
+              <a href="faq.html">
+                <div class="about-page">FAQ</div>
+              </a>
+            </div>
+            <div class="nav" onclick="toggle1()">Services<i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="page-hover" id="toggle-hover1">
+              <a href="webdesign.html">
+                <div class="about-page">Web designing</div>
+              </a>
+              <a href="webdesign.html">
+                <div class="about-page">Web Development</div>
+              </a>
+              <a href="webdesign.html">
+                <div class="about-page">Web Application</div>
+              </a>
+            </div>
+            <a href="project.html" class="nav">Projects</a>
+            <a href="blog.html" class="nav">Blog</a>
+            <a href="contact.html" class="nav">Contact</a>
+          </div>
+        </div>
+      <!-- toggle close -->
+    </div>
+    <div class="hero-about">
+      <h1>Web Designing</h1>
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html"
+              style="color: white !important; text-decoration: none !important;">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page"
+            style="color: white !important; text-decoration: none !important;">Web Designing
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- herosection close -->
+  <div class="container main">
+    <!-- box1 -->
+    <div class="rightside">
+      
+      <!-- category -->
+      <div class="category1">
+        <h3>Main Services</h3>
+        <div class="cat">Web Designing</div>
+        <div class="cat">Web Development</div>
+        <div class="cat">Web Application</div>
+      </div>
+      <div class="tags">
+        <h3>Tags</h3>
+        <div class="tag1">Development</div>
+        <div class="tag1">Marketing</div>
+        <div class="tag1">Solutions</div>
+      </div>
+      <div class="follow">
+        <h3>Follow Us</h3>
+        <div class="follow-icon"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="follow-icon"><i class="fa-brands fa-twitter"></i></div>
+        <div class="follow-icon"><i class="fa-brands fa-square-instagram"></i></div>
+        <div class="follow-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+
+      </div>
+      
+    </div>
+    
+    <!-- box2 -->
+    <div class="leftside">
+      <div class="section1">
+        <img src="assest/img/jpg/service-details-01.jpg" alt="">
+        <h3>Web Designing</h3>
+        <p>Web designing is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+        <div class="img1">
+          <div class="solu">
+            <img src="assest/img/jpg/depositphotos_211232422-stock-photo-businessman-beautiful-young-businesswoman-using.jpg " alt="">
+            <div class="con-solu">
+              <h5>Best Solutions</h5>
+              <p>We focus on the best practices for it solutions and services.</p>
+            </div>
+          </div>
+          <div class="solu1"><img src="assest/img/jpg/data ana.jpg" alt="">
+            <div class="con-solu">
+              <h5>Best Solutions</h5>
+              <p>We focus on the best practices for it solutions and services.</p>
+            </div>
+          </div>
+        </div>
+        <p id="par1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+        <h3 id="par2">Our work benefits</h3>
+        <p id="par3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+          
+        
+        <div class="list" id="list">
+          <li><i class="fa-solid fa-check"></i>Marketing options and rates</li>
+          <li><i class="fa-solid fa-check"></i>The ability to turnaround consulting</li>
+          <li><i class="fa-solid fa-check"></i>Research beyond the business plan</li>
+          <li><i class="fa-solid fa-check"></i>Customer engagement matters</li>
+        </div>
+        <p id="par4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+
+    <div class="container footer">
+      <div class="log">
+        <h1>CraftyCode</h1>
+        <p>We have been most trusted web design agency since 25+ years.</p>
+        <div class="media">
+          <div class="media1"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="media1"><i class="fa-brands fa-twitter"></i></div>
+          <div class="media1"><i class="fa-brands fa-youtube"></i></div>
+          <div class="media1"><i class="fa-brands fa-linkedin-in"></i></div>
+        </div>
+      </div>
+      <div class="sub">
+        <h1>Newsletter</h1>
+        <p>Subscribe to our newsletter to receive updates on the latest news!</p>
+        <button>Subscribe with us <i class="fa-brands fa-telegram"></i></button>
+      </div>
+      <div class="contact">
+        <h1>Contacts</h1>
+        <div class="ph">
+          <div class="div-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="content1">
+            <h4>Contact Us</h4>
+            <p>(+44) 123-456-789</p>
+          </div>
+        </div>
+        <div class="ph">
+          <div class="div-icon"><i class="fa-regular fa-envelope"></i></div>
+          <div class="content1">
+            <h4>Mail Us</h4>
+            <p>craftycode@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>© 2024 All rights reserved by <span> Website Layout</span></p>
+
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assest/js/webdesign.js"></script>
+</body>
+
+</html>
